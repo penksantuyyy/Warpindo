@@ -1,11 +1,15 @@
 module.exports = {
   purge: [],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        body: ["Rubik", "sans-serif"],
+      },
+    },
   },
   variants: {},
   plugins: [],
   future: {
     removeDeprecatedGapUtilities: true,
-  }
-}
+  },
+};

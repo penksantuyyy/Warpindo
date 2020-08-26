@@ -710,6 +710,33 @@ video {
   color: rgba(45, 55, 72, var(--text-opacity));
 }
 
+.stars {
+  position: relative;
+  min-width: 200px;
+  display: inline-flex;
+}
+
+.star {
+  position: absolute;
+  display: inline-flex;
+  -webkit-mask: url(../images/icons/star.svg) no-repeat center left;
+          mask: url(../images/icons/star.svg) no-repeat center left;
+}
+
+.star:not(.placeholder) {
+  --bg-opacity: 1;
+  background-color: #ecc94b;
+  background-color: rgba(236, 201, 75, var(--bg-opacity));
+  z-index: 20;
+}
+
+.star.placeholder {
+  --bg-opacity: 1;
+  background-color: #cbd5e0;
+  background-color: rgba(203, 213, 224, var(--bg-opacity));
+  z-index: 10;
+}
+
 .space-y-0 > :not(template) ~ :not(template){
   --space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--space-y-reverse)));

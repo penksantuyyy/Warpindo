@@ -4,6 +4,7 @@ import Header from "parts/Header";
 import Hero from "parts/Hero";
 import ChooseMenu from "parts/ChooseMenu";
 import CoffeeMenu from "parts/CoffeeMenu";
+import Testimony from "parts/Testimony";
 
 import landingPage from "json/landingPage.json";
 
@@ -21,6 +22,7 @@ export default class LandingPage extends React.Component {
         <div className="py-20 bg-red-100">
           <CoffeeMenu data={landingPage.categories} />
         </div>
+        <Testimony data={landingPage.testimonial} />
       </>
     );
   }

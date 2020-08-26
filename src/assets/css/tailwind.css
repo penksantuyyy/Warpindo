@@ -32,6 +32,26 @@
   @apply border-b-2 border-gray-800 text-gray-800;
 }
 
+.stars {
+  position: relative;
+  min-width: 200px;
+  display: inline-flex;
+}
+
+.star {
+  position: absolute;
+  display: inline-flex;
+  mask: url(../images/icons/star.svg) no-repeat center left;
+}
+
+.star:not(.placeholder) {
+  @apply z-20 bg-yellow-500;
+}
+
+.star.placeholder {
+  @apply z-10 bg-gray-400;
+}
+
 @tailwind utilities;
 
 .w-180 {

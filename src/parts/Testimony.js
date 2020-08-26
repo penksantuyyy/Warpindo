@@ -24,7 +24,7 @@ export default function Testimony({ data }) {
                 <span className="text-sm text-red-600 tracking-wide">
                   {item.tag}
                 </span>
-                <h5 className="font-medium text-xl text-gray-800 tracking-wider">
+                <h5 className="pt-2 pb-4 font-medium text-xl text-gray-800 tracking-wider">
                   {item.name}
                 </h5>
                 <p className="h-20 leading-5 text-gray-700 tracking-wider">

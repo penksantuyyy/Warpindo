@@ -140,6 +140,33 @@
       ]
     }
   ],
+  "vinyl": [
+    {
+      "_id": "klandlsakdnaldsa",
+      "name": "John Coltrane",
+      "song": "A Love Supreme"
+    },
+    {
+      "_id": "fdhlfsfkjashsajd",
+      "name": "Miles Davis",
+      "song": "Kind of Blue"
+    },
+    {
+      "_id": "zsjfewvriojicoqf",
+      "name": "Chick Corea",
+      "song": "Return to Forever"
+    },
+    {
+      "_id": "qojqwdkalnmdsakf",
+      "name": "Chet Baker",
+      "song": "Chet Baker Sings"
+    },
+    {
+      "_id": "adklasnanfqosadf",
+      "name": "Eric Dolphy",
+      "song": "Out to Lunch"
+    }
+  ],
   "testimonial": [
     {
       "_id": "asd1293uasdads1",

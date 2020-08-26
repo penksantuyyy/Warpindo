@@ -29,7 +29,7 @@
 }
 
 .btn-outline-gray {
-  @apply border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white;
+  @apply border-gray-700 text-gray-700 hover:bg-gray-900 hover:text-white;
 }
 
 .stars {

@@ -3,7 +3,7 @@ import { BrowserRouter as Route } from "react-router-dom";
 
 import Button from "elements/Button";
 
-export default function CoffeeMenu({ data }) {
+export default function ListMenu({ data }) {
   return data.map((category, index1) => {
     return (
       <section className="px-20">

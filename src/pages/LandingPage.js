@@ -3,7 +3,8 @@ import React from "react";
 import Header from "parts/Header";
 import Hero from "parts/Hero";
 import ChooseMenu from "parts/ChooseMenu";
-import CoffeeMenu from "parts/CoffeeMenu";
+import ListMenu from "parts/ListMenu";
+import VinylMenu from "parts/VinylMenu";
 import Testimony from "parts/Testimony";
 import Footer from "parts/Footer";
 
@@ -20,9 +21,13 @@ export default class LandingPage extends React.Component {
         <Header {...this.props}></Header>
         <Hero data={landingPage.hero} />
         <ChooseMenu data={landingPage.chooseMenu} />
+
         <div className="py-20 bg-red-100">
-          <CoffeeMenu data={landingPage.categories} />
+          <ListMenu data={landingPage.categories} />
         </div>
+
+        <VinylMenu data={landingPage.vinyl} />
+
         <Testimony data={landingPage.testimonial} />
         <Footer />
       </>

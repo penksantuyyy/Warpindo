@@ -9,7 +9,7 @@ export default function Hero(props) {
     <section className="mb-40 px-20 h-120 grid grid-cols-12 bg-red-100 relative">
       <div className="pt-24 pb-32 col-span-6 tracking-wider">
         <div className="w-full">
-          <span className="text-xl">COFFEE</span>
+          <span className="text-lg text-gray-600">COFFEE</span>
           <h1 className="mt-2 text-5xl font-medium">Es Kopi Susu Speciality</h1>
           <p className="mt-6 text-gray-600">
             Nikmati rasa dan karsa dari pilihan kopi berkualitas yang diracik

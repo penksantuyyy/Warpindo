@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 import Button from "elements/Button";
 
-import BrandLogo from "assets/images/logo/logo-warpindo-small.svg";
+import BrandLogo from "assets/images/logo/warpindo-small.svg";
 
 export default function IconNav() {
   return (

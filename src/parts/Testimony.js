@@ -5,7 +5,7 @@ import Button from "elements/Button";
 
 export default function Testimony({ data }) {
   return (
-    <section className="px-20 bg-red-100">
+    <section className="px-20 py-20 bg-red-100">
       <h3 className="text-2xl uppercase font-medium tracking-wider text-center">
         Testimony
       </h3>
@@ -21,7 +21,9 @@ export default function Testimony({ data }) {
                 />
               </div>
               <div className="px-6 py-12 w-2/3 ">
-                <span className="text-red-600 tracking-wide">{item.tag}</span>
+                <span className="text-sm text-red-600 tracking-wide">
+                  {item.tag}
+                </span>
                 <h5 className="font-medium text-xl text-gray-800 tracking-wider">
                   {item.name}
                 </h5>
@@ -39,7 +41,7 @@ export default function Testimony({ data }) {
       <div className="text-center">
         <Button
           type="link"
-          className="btn btn-outline btn-outline-red"
+          className="btn btn-outline btn-outline-gray"
           href={`/properties/${data._id}`}
         >
           Read Stories

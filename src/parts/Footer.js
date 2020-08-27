@@ -20,7 +20,7 @@ import VisaLogo from "assets/images/logo/visa-logo.svg";
 
 export default function Footer() {
   return (
-    <footer className="pt-40">
+    <footer className="pt-20">
       <div className="px-20 grid grid-cols-12 gap-8">
         <div className="col-span-4">
           <div className="mb-2 flex items-center">

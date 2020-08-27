@@ -11,10 +11,10 @@ export default function VinylMenu({ data }) {
         <img src={VinylPhoto} alt="vinyl-menu-bg" />
       </div>
       <div className="col-span-6">
-        <h3 className="text-2xl font-medium uppercase">
+        <h3 className="text-2xl font-medium uppercase tracking-widest">
           Boring With The Song? Enjoy Listen Our Jazzy Vinyl Music
         </h3>
-        <p className="pt-4 pb-6 text-gray-600">
+        <p className="pt-4 pb-6 text-gray-600 tracking-wider">
           Dengan musik jazz piringan kaset kami nikmati perpaduan antara kopi
           pilihan dan musik tersantuy yang kami sajikan, dijamin telinga anda
           akan dimanjakan dengan musik kami.
@@ -47,7 +47,7 @@ export default function VinylMenu({ data }) {
                     d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
-                <div className="pl-2 text-gray-600">
+                <div className="pl-2 text-gray-600 tracking-wide">
                   <span>{item.name}</span>
                   <span> - </span>
                   <span>{item.song}</span>

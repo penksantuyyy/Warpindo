@@ -6,7 +6,7 @@ import Button from "elements/Button";
 export default function Testimony({ data }) {
   return (
     <section className="px-20 py-20 bg-red-100">
-      <h3 className="text-2xl uppercase font-medium tracking-wider text-center">
+      <h3 className="text-3xl uppercase font-medium tracking-wider text-center">
         Testimony
       </h3>
       <div className="my-12 grid grid-cols-12 gap-8">
@@ -30,8 +30,8 @@ export default function Testimony({ data }) {
                 <p className="h-20 leading-5 text-gray-700 tracking-wider">
                   {item.description}
                 </p>
-                <div className="pt-8 self-center">
-                  <Star value={item.rate} width={24} height={25} spacing={0} />
+                <div className="pt-8">
+                  <Star value={item.rate} width={24} height={24} spacing={2} />
                 </div>
               </div>
             </div>

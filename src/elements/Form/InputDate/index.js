@@ -48,16 +48,16 @@ export default function Date(props) {
   return (
     <div
       ref={refDate}
-      className={["input-date mb-3", props.outerClassName].join(" ")}
+      className={["input-date mt-2 mb-6", props.outerClassName].join(" ")}
     >
-      <div className="input-group bg-white">
+      <div className="input-group relative">
         <div className="input-group-prepend bg-gray-900">
-          <span className="input-group-text bg-red-600 pointer-events-none border-t border-b border-l border-gray-300 cursor-pointer p-0 w-12 h-12 flex justify-center items-center absolute z-20">
+          <span className="input-group-text pointer-events-none border-t border-b border-l border-r border-gray-300 cursor-pointer p-0 w-12 h-12 flex justify-center items-center absolute z-20">
             <svg
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              className="calendar w-6 h-6 text-white"
+              className="calendar w-6 h-6 text-gray-900"
             >
               <path
                 strokeLinecap="round"
@@ -71,7 +71,7 @@ export default function Date(props) {
         <input
           readOnly
           type="text"
-          className="form-control border outline-none shadow-none bg-white py-1 px-12 text-center justify-center w-full h-12"
+          className="form-control border outline-none shadow-none bg-white py-1 pl-6 text-center justify-center w-full h-12"
           value={displayDate}
           placeholder={placeholder}
           onClick={() => setIsShowed(!isShowed)}
@@ -97,5 +97,4 @@ Date.propTypes = {
   onChange: propTypes.func,
   placeholder: propTypes.string,
   outerClassName: propTypes.string,
-  noBorder: propTypes.bool,
 };

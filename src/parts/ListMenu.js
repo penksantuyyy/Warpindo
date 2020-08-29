@@ -1,9 +1,11 @@
 import React from "react";
-import { BrowserRouter as Route } from "react-router-dom";
+
+import propTypes from "prop-types";
 
 import Button from "elements/Button";
+import CtaButton from "parts/CtaButton";
 
-export default function ListMenu({ data }) {
+export default function ListMenu({ data, isLandingPage }) {
   return data.map((category, index1) => {
     return (
       <section className="px-20">
@@ -54,18 +56,12 @@ export default function ListMenu({ data }) {
             })
           )}
         </div>
-        <div className="text-center">
-          <Route>
-            <Button
-              className="btn btn-outline btn-outline-gray"
-              type="link"
-              href={`/properties/coffee`}
-            >
-              Shop Now
-            </Button>
-          </Route>
-        </div>
+        <div>{isLandingPage ? <CtaButton /> : null}</div>
       </section>
     );
   });
 }
+
+ListMenu.propTypes = {
+  isLandingPage: propTypes.bool,
+};

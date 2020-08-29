@@ -1,11 +1,11 @@
 import React from "react";
 
 import Star from "elements/Star";
-import Button from "elements/Button";
+import CtaButton from "parts/CtaButton";
 
-export default function Testimony({ data }) {
+export default function Testimony({ data, isLandingPage }) {
   return (
-    <section className="px-20 py-20 bg-red-100">
+    <section className="px-20">
       <h3 className="text-3xl uppercase font-medium tracking-wider text-center">
         Testimony
       </h3>
@@ -38,15 +38,7 @@ export default function Testimony({ data }) {
           );
         })}
       </div>
-      <div className="text-center">
-        <Button
-          type="link"
-          className="btn btn-outline btn-outline-gray"
-          href={`/properties/${data._id}`}
-        >
-          Read Stories
-        </Button>
-      </div>
+      <div>{isLandingPage ? <CtaButton /> : null}</div>
     </section>
   );
 }

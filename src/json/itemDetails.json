@@ -14,11 +14,19 @@
     {
       "_id": "asd1293uasdads1",
       "url": "/images/img-featured-3.jpg"
+    },
+    {
+      "_id": "asd1293uasdads1",
+      "url": "/images/img-featured-4.jpg"
+    },
+    {
+      "_id": "asd1293uasdads1",
+      "url": "/images/img-featured-5.jpg"
     }
   ],
   "country": "Indonesia",
   "city": "Bogor",
-  "price": "52",
+  "price": "520000",
   "unit": "night",
   "isPopular": true,
   "hasBackyard": true,
@@ -58,7 +66,7 @@
       "_id": "asd1293uasdads1",
       "qty": "2",
       "name": "units ready",
-      "imageUrl": "/images/icon-airconditioner.svg"
+      "imageUrl": "/images/icon-ac.svg"
     },
     {
       "_id": "asd1293uasdads1",
@@ -102,50 +110,59 @@
   "categories": [
     {
       "_id": "asd1293uasdads1",
-      "name": "House with beauty backyard",
+      "name": "Coffee's Menu",
       "items": [
         {
           "_id": "asd1293uasdads1",
-          "name": "PSW Antasari",
-          "imageUrl": "/images/treasure-1.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
-          "isPopular": false
-        },
-        {
-          "_id": "asd1293uasdads1",
-          "name": "Kuretakeso",
-          "imageUrl": "/images/treasure-2.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
-          "isPopular": false
-        },
-        {
-          "_id": "asd1293uasdads1",
-          "name": "Arya Duta",
-          "imageUrl": "/images/treasure-3.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
+          "name": "Kopi Cafe Late’",
+          "imageUrl": "/images/coffee-photo-1.jpg",
+          "tag": "Coffee",
+          "price": "Rp. 25.000,-",
           "isPopular": true
         },
         {
           "_id": "asd1293uasdads1",
-          "name": "Grand Dhika",
-          "imageUrl": "/images/treasure-4.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
+          "name": "Kopi Espresso",
+          "imageUrl": "/images/coffee-photo-2.jpg",
+          "tag": "Coffee",
+          "price": "Rp. 17.000,-",
           "isPopular": false
+        },
+        {
+          "_id": "asd1293uasdads1",
+          "name": "Kopi Hitam Tubruk",
+          "imageUrl": "/images/coffee-photo-3.jpg",
+          "tag": "Coffee",
+          "price": "Rp. 10.000,-",
+          "isPopular": false
+        },
+        {
+          "_id": "asd1293uasdads1",
+          "name": "Paket Kopi Susu",
+          "imageUrl": "/images/coffee-photo-4.jpg",
+          "tag": "Coffee",
+          "price": "Rp. 105.000,-",
+          "isPopular": true
         }
       ]
     }
   ],
-  "testimonial": {
-    "_id": "asd1293uasdads1",
-    "imageUrl": "/images/testimonial-detailspage.jpg",
-    "name": "Happy Family",
-    "rate": 4.25,
-    "content": "What a great trip with my family and I should try again and again next time soon...",
-    "familyName": "Angga",
-    "familyOccupation": "UI Designer"
-  }
+  "testimonial": [
+    {
+      "_id": "asd1293uasdads1",
+      "imageUrl": "/images/testimony-photo-1.jpg",
+      "name": "Bung Apenk",
+      "rate": 4.15,
+      "description": "“Really liked, how Warpindo serve the coffee with the best quality. V60 method is my favourite friend to enjoy my sunset time”",
+      "tag": "Coffee Lover"
+    },
+    {
+      "_id": "asd1293uasdads1",
+      "imageUrl": "/images/testimony-photo-2.jpg",
+      "name": "Rahadi WRTM",
+      "rate": 4.95,
+      "description": "“Every single menu that i ordered, have taste that make me want to get it again. Nice One! Warpindo”",
+      "tag": "Culinary Enthusiast"
+    }
+  ]
 }

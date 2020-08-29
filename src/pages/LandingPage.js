@@ -15,6 +15,12 @@ export default class LandingPage extends React.Component {
     super(props);
     this.refChooseMenu = React.createRef();
   }
+
+  componentDidMount() {
+    window.title = "Warpindo | Home";
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <>
@@ -23,12 +29,14 @@ export default class LandingPage extends React.Component {
         <ChooseMenu data={landingPage.chooseMenu} />
 
         <div className="py-20 bg-red-100">
-          <ListMenu data={landingPage.categories} />
+          <ListMenu isLandingPage={true} data={landingPage.categories} />
         </div>
 
         <VinylMenu data={landingPage.vinyl} />
 
-        <Testimony data={landingPage.testimonial} />
+        <div className="py-20 bg-red-100">
+          <Testimony isLandingPage={true} data={landingPage.testimonial} />
+        </div>
         <Footer />
       </>
     );

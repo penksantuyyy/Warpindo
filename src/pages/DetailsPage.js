@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
 import Header from "parts/Header";
 import Breadcrumb from "elements/Breadcrumb";
 import FeaturedImage from "parts/FeaturedImage";
@@ -22,6 +24,7 @@ export default class DetailsPage extends Component {
       { pageTitle: "Home", pageHref: "" },
       { pageTitle: "Warpindo Details", pageHref: "" },
     ];
+
     return (
       <>
         <Header {...this.props}></Header>

@@ -118,7 +118,7 @@ class BookingForm extends Component {
           <Button
             className="btn btn-fill block text-center"
             type="link"
-            href=""
+            href="/checkout"
             onClick={startBooking}
           >
             Tambah Ke Keranjang

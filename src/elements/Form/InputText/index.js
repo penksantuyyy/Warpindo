@@ -2,8 +2,6 @@ import React, { useState } from "react";
 
 import propTypes from "prop-types";
 
-import "./index.css";
-
 export default function Text(props) {
   const {
     value,
@@ -24,52 +22,55 @@ export default function Text(props) {
 
   const onChange = (event) => {
     const target = {
-      name: name,
-      value: event.target.value,
-    },
+      target: {
+        name: name,
+        value: event.target.value,
+      },
+    };
+
+    if (type === "email") {
+      if (!pattern.test(event.target.value)) setHasError(errorResponse);
+      else setHasError(null);
+    }
+
+    if (type === "tel") {
+      if (event.target.validity.valid) props.onChange(target);
+    } else {
+      props.onChange(target);
+    }
   };
 
-  if(type === "email") {
-    if (!pattern.test(event.target.value)) {
-      setHasError(errorResponse);
-    } else {
-      setHasError(null);
-    }
-  }
-
-  if(type === "tel") {
-    if (event.target.validity.valid) {
-      props.onChange(target);
-    } else {
-      props.onChange(target);
-    }
-  }
-
   return (
-    <div className={["input-text mb-3", outerClassName.join(' ')]}>
+    <div className={["input-text mt-2 mb-8", outerClassName].join(" ")}>
       <div className="input-group">
         {prepend && (
           <div className="input-group-prepend bg-gray-900">
-            <span className="input-group-text">{ prepend }</span>
+            <span className="input-group-text">{prepend}</span>
           </div>
         )}
 
-        <input name={name} type={type} pattern={pattern} className={['form-control', inputClassName].join(" ")} value={value} placeholder={placeholder} onChange={onChange} />
-          
-        { append && (
+        <input
+          name={name}
+          type={type}
+          pattern={pattern}
+          className={["form-control", inputClassName].join(" ")}
+          value={value}
+          placeholder={placeholder}
+          onChange={onChange}
+        />
+
+        {append && (
           <div className="input-group-prepend bg-gray-900">
-          <span className="input-group-text">{ prepend }</span>
-        </div>
-        ) }
+            <span className="input-group-text">{prepend}</span>
+          </div>
+        )}
       </div>
-        { HasError && <span className="error-helper">{HasError}</span> }
+      {HasError && <span className="error-helper">{HasError}</span>}
     </div>
   );
-} 
+}
 
 Text.defaultProps = {
-  type: "text",
-  pattern: "",
   placeholder: "Silahkan ketik disini...",
   errorResponse: "Masukkan format yang benar",
 };

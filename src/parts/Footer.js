@@ -18,7 +18,46 @@ import MastercardLogo from "assets/images/logo/mastercard-logo.svg";
 import OvoLogo from "assets/images/logo/ovo-logo.svg";
 import VisaLogo from "assets/images/logo/visa-logo.svg";
 
-export default function Footer() {
+export default function Footer(props) {
+  if (props.isCheckout) {
+    return (
+      <footer className="footer-checkout">
+        <div className="flex flex-col items-center justify-center">
+          <img className="w-16 h-16" src={BrandFooter} alt="warpindo-logo" />
+          <h3 className="text-xl font-medium uppercase pt-4">Warpindo</h3>
+          <ul className="pt-4 pb-10 flex items-center text-gray-600">
+            <li className="px-4 flex items-center">
+              <img className="pr-4" src={FacebookIcon} alt="facebook-link" />
+              <Button className="nav-link" type="link" href="/bites">
+                Warpindo
+              </Button>
+            </li>
+            <li className="px-4 flex items-center">
+              <img className="pr-4" src={InstagramIcon} alt="instagram-link" />
+              <Button className="nav-link" type="link" href="/bites">
+                @warpindo
+              </Button>
+            </li>
+            <li className="px-4 flex items-center">
+              <img className="pr-4" src={TwitterIcon} alt="twitter-link" />
+              <Button className="nav-link" type="link" href="/bites">
+                @warpindo
+              </Button>
+            </li>
+          </ul>
+        </div>
+        <div className="px-20 py-4 flex items-center justify-between bg-red-600">
+          <p className="text-white">© Copyright 2020 by Warpindo</p>
+          <div className="flex items-center text-white">
+            <span>Made with</span>
+            <HeartOutlined className="px-2" width={24} />
+            <span>&</span>
+            <CoffeeOutlined className="pl-2" width={24} />
+          </div>
+        </div>
+      </footer>
+    );
+  }
   return (
     <footer className="pt-20">
       <div className="px-20 grid grid-cols-12 gap-8">

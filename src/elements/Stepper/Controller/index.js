@@ -2,10 +2,8 @@ import React from "react";
 
 export default function Controller(props) {
   return (
-    <section>
-      <div className="flex flex-row justify-center">
-        <div className="w-3/12">{props.children}</div>
-      </div>
-    </section>
+    <div className="pt-4 pb-40 flex flex-col justify-center items-center">
+      <div className="flex flex-col">{props.children}</div>
+    </div>
   );
 }
